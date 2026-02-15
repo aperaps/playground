@@ -1,3 +1,2 @@
-Playground
-
-Hallo Dudes, hier könnten später mal wichtige Informationen zum Projekt stehen. :)
+# playground
+Zum Herumprobieren, was GitHub alles kann.
