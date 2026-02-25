@@ -1,0 +1,113 @@
+/* ------------------------------
+   GLOBAL STYLES
+--------------------------------*/
+:root {
+    --bg: #1e1e1e;
+    --card-bg: #242424;
+    --text: #e6e6e6;
+
+    --shadow-light: rgba(255, 255, 255, 0.08);
+    --shadow-dark: rgba(0, 0, 0, 0.6);
+
+    --radius: 12px;
+    --transition: 0.25s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+/* ------------------------------
+   HEADER
+--------------------------------*/
+.header {
+    padding: 20px;
+    text-align: left;
+}
+
+.logo {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+/* ------------------------------
+   MAIN CONTAINER
+--------------------------------*/
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ------------------------------
+   MODULE GRID
+--------------------------------*/
+.modules-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* ------------------------------
+   MODULE CARD
+--------------------------------*/
+.module-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 20px;
+    flex: 1 1 calc(25% - 20px); /* 4 Spalten */
+    min-width: 250px;
+
+    box-shadow:
+        6px 6px 12px var(--shadow-dark),
+        -6px -6px 12px var(--shadow-light);
+
+    transition: box-shadow var(--transition), background var(--transition);
+}
+
+.module-card:hover {
+    box-shadow:
+        8px 8px 16px var(--shadow-dark),
+        -8px -8px 16px var(--shadow-light);
+}
+
+/* ------------------------------
+   MODULE TITLE
+--------------------------------*/
+.module-title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------
+   RESPONSIVE BREAKPOINTS
+--------------------------------*/
+@media (max-width: 1200px) {
+    .module-card {
+        flex: 1 1 calc(33.33% - 20px); /* 3 Spalten */
+    }
+}
+
+@media (max-width: 900px) {
+    .module-card {
+        flex: 1 1 calc(50% - 20px); /* 2 Spalten */
+    }
+}
+
+@media (max-width: 600px) {
+    .module-card {
+        flex: 1 1 100%; /* 1 Spalte */
+    }
+}

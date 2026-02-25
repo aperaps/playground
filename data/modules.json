@@ -1,0 +1,36 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "maxWidth": 1600
+  },
+  "modules": [
+    {
+      "id": "mod-1",
+      "title": "Modul 1",
+      "type": "text",
+      "content": "Lorem ipsum dolor sit amet."
+    },
+    {
+      "id": "mod-2",
+      "title": "Modul 2",
+      "type": "text",
+      "content": "Noch ein Beispieltext."
+    },
+    {
+      "id": "mod-3",
+      "title": "Modul 3",
+      "type": "text",
+      "content": "Hier könnte später etwas Spannendes stehen."
+    },
+    {
+      "id": "mod-4",
+      "title": "Modul 4",
+      "type": "text",
+      "content": "Dummy-Content für den Anfang."
+    }
+  ],
+  "settings": {
+    "theme": "dark",
+    "layout": "flex"
+  }
+}
