@@ -6,9 +6,8 @@
   "modules": [
     {
       "id": "mod-1",
-      "title": "Modul 1",
-      "type": "text",
-      "content": "Lorem ipsum dolor sit amet."
+      "title": "Shoutbox",
+      "type": "shoutbox"
     },
     {
       "id": "mod-2",

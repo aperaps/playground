@@ -14,6 +14,17 @@
 
     <header class="header">
         <div class="logo">Dashboard</div>
+
+        <div class="account-area">
+            <div id="accountAvatar" class="avatar">?</div>
+
+            <div id="accountMenu" class="account-menu hidden">
+                <div id="menuProfile" class="menu-item">Profil</div>
+                <div id="menuLogin" class="menu-item">Anmelden</div>
+                <div id="menuRegister" class="menu-item">Registrieren</div>
+                <div id="menuLogout" class="menu-item hidden">Abmelden</div>
+            </div>
+        </div>
     </header>
 
     <main class="container">
@@ -21,6 +32,37 @@
             <!-- Module-Kacheln werden dynamisch per JS eingefügt -->
         </div>
     </main>
+
+    <!-- LOGIN MODAL -->
+    <div id="loginModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Anmelden</h2>
+            <input id="loginUser" type="text" placeholder="Benutzername">
+            <input id="loginPass" type="password" placeholder="Passwort">
+            <button id="loginSubmit">Login</button>
+            <button class="modal-close">Schließen</button>
+        </div>
+    </div>
+
+    <!-- REGISTER MODAL -->
+    <div id="registerModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Registrieren</h2>
+            <input id="regUser" type="text" placeholder="Benutzername">
+            <input id="regPass" type="password" placeholder="Passwort">
+            <button id="regSubmit">Registrieren</button>
+            <button class="modal-close">Schließen</button>
+        </div>
+    </div>
+
+    <!-- PROFILE MODAL -->
+    <div id="profileModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Profil</h2>
+            <p id="profileName"></p>
+            <button class="modal-close">Schließen</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
